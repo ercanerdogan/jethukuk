@@ -16,11 +16,12 @@ namespace MVCBlog.Areas.Admin.Controllers
         // GET: Admin/Home
         public ActionResult Index()
         {
-            BlogContext db = new BlogContext();
 
-            AdminUser adminUser = db.AdminUsers.FirstOrDefault(x => x.Email == HttpContext.User.Identity.Name);
-            ViewBag.Name = adminUser.Name;
-            ViewBag.Surname = adminUser.Surname;
+            //BlogContext db = new BlogContext();
+
+            //AdminUser adminUser = db.AdminUsers.FirstOrDefault(x => x.Email == HttpContext.User.Identity.Name);
+            //ViewBag.Name = adminUser.Name;
+            //ViewBag.Surname = adminUser.Surname;
 
             return View();
         }
